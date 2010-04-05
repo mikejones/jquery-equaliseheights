@@ -41,7 +41,8 @@
             break;
         }
         var maxHeight = max($.map(row, function(el) { return $(el).height(); }));
-        $listItems.slice(i,j).css('height', maxHeight + "px")
+        $listItems.slice(i,j).css('height', maxHeight + "px");
+        i = j-1;
       }
     });
   }
